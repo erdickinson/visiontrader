@@ -1,0 +1,27 @@
+# Basic configuration for the Vision Trader MVP
+instrument: "US500"
+timeframe: "M5"
+
+# Screen capture area (set these for your chart window)
+screenshot_region:
+  x: 100
+  y: 100
+  width: 1600
+  height: 900
+
+capture_interval_ms: 1500
+max_image_age_ms: 2500
+
+# Model provider: "mock" or "provider"
+llm_provider: "mock"
+
+risk:
+  max_risk_per_trade_usd: 100.0
+  max_daily_loss_usd: 500.0
+  max_positions: 1
+
+# Execution actuator: "gui" or "broker"
+actuator: "gui"
+
+# Logging
+log_dir: "./logs"
